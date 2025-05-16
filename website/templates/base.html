@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="static/css/style.css">
+
+        <title>Secure Cart | {% block title %} {% endblock %} </title> <!--Fetches the title of the page each time-->
+    </head>
+    <body>
+        <!--Navbar section-->
+        <header>
+            <div class="container">
+                <div id="logo">Secure Cart</div>
+                
+                <nav>
+                    <ul class="nav-links">
+                        
+                        <li><a href="/basket">Basket</a></li>
+                        <li><a href="/account/{{ current_user.id }}">Account</a></li>
+                        <li><a href="/logout">Log out</a></li>
+                        <form class="navform" role="search" action="/search" style="margin-right: 170px;" method="POST">
+                            <input type="search" class="input" name="search" id="search" placeholder="search">
+                            <button type="submit">Search</button>
+                        </form>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+         {% block body %}
+
+         {% endblock %}
+    </body> 
+</html>

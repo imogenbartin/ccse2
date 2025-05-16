@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} add items {% endblock %}
+
+{% block body %}
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Picture</th>
+            <th scope="col">Add</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <form action="" method="POST" enctype="multipart/form-data">
+                {{ form.hidden_tag()}}
+                <td>{{ form.productName }}</td>
+                <td>{{ form.price }}</td>
+                <td>{{ form.itemAmount }}</td>
+                <td>{{ form.productPicture() }}</td>
+                <td>{{ form.addProduct() }}</td>
+            </form>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

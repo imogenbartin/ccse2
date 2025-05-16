@@ -1,0 +1,25 @@
+{% extends 'forms.html' %}
+
+{% block title %} Login {% endblock %}
+
+{% block body %}
+
+<!-- Start of login section-->
+
+
+<div class="loginback">
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="email"><h4>Email Address</h4>{{ form.email }}</div>
+        <div class="password"><h4>Password</h4>{{ form.password }}</div>
+        
+        <div class="button">
+            <a href="/login"></a>
+            {{ form.submit() }}
+        </div>
+    </form>
+    <p>Don't have an account? Register <a href="/register">HERE</a></p>
+</div>
+
+
+{% endblock %}

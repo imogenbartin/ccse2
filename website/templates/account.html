@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<button>Change Password</button>
+<h3> {{ current_user.username }}</h3>
+<p>Email: {{ current_user.email }}</p>
+<a href="/change-password/{{ current_user.id }}">Change Password</a>
+
+{% endblock %}
