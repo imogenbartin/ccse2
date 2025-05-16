@@ -1,0 +1,26 @@
+.loginback{
+    background-color: #9DC2B3;
+    width: 400px;
+    height: 500px;
+    border-radius: 12px;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+}
+
+.button{
+    background-color: #376F5E;
+    border: none;
+    color: antiquewhite;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
